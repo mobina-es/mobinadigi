@@ -728,7 +728,8 @@
         </a>
       </div>
       </div>
-    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
   </div>
           </div>
         </div>
@@ -1156,19 +1157,12 @@
         <!-- end call -->
     </div>
         <!--end website-->
+        <!-- <script src="./node_modules/swiper/swiper-bundle.min.js"></script> -->
         <script>
     var swiper = new Swiper(".myWonder", {
-      slidesPerView: 1,
-      spaceBetween: 1,
-      centeredSlides: true,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
+      slidesPerView: 7.5,
+      spaceBetween: 2,
+      freeMode: true,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -1176,7 +1170,7 @@
     });
     var swiper = new Swiper(".myStoryWonder", {
       slidesPerView: 9.5,
-      spaceBetween: 20,
+      spaceBetween: 1,
       centeredSlides: true,
       navigation: {
         nextEl: ".swiper-button-next",
@@ -1184,12 +1178,12 @@
       },
     });
     var swiper = new Swiper(".myAmazing", {
-      slidesPerView: 3,
-      spaceBetween: 30,
+      slidesPerView: 7.5,
+      spaceBetween: 2,
       freeMode: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
     });
   </script>
