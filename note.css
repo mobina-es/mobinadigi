@@ -1,0 +1,28 @@
+.topic{
+    width: 80% ;
+    margin: 0 auto;
+}
+.topic__child{
+    flex-flow: column wrap;
+}
+.Topic__top,.Topic__center,.Topic__bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    column-gap: 5px;
+}
+.Topic__top img,.Topic__center img,.Topic__bottom img{
+    width: 86px;
+    height: 86px;
+}
+.Topic__top span,.Topic__center span,.Topic__bottom span{
+    font-size: 40px;
+    font-weight: bold;
+    color: aqua;
+    font-family: var(--font-family-number);
+}
+.Topic__top p,.Topic__center p,.Topic__bottom p{
+    font-family: var(--font-family);
+    font-size: 11px;
+}

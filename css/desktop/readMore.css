@@ -1,0 +1,142 @@
+.read{
+    width: 100%;
+    height: 300px;
+    .read__center {
+        width: 80%;
+        height: 265px;
+        margin: 0 auto;
+        .read__center__top{
+            width: 100%;
+            height: 55px;
+            padding: 0 20px;
+            display: flex;
+            flex-flow: row wrap;
+            .read__center__top__first{
+                width: 50%;
+                height: inherit;
+                padding-top: 10px;
+                & h5{
+                    font-size: 14px;
+                    font-family: var(--font-family);
+                }
+            }
+            .read__center__top__second{
+                width: 50%;
+                height: inherit;
+                padding-top: 10px;
+                & a{
+                    text-decoration: none;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: flex-end;                    
+                    & p{
+                        font-size: 12px;
+                        font-family: var(--font-family);
+                        color: #2FCEE7;
+                    }
+                    & svg{
+                        width: 18px;
+                        height: 18px;
+                        fill: #29c3db;
+                    }
+                }
+            }
+        }
+        .read__center__bottom{
+            width: 100%;
+            height: 210px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            column-gap: 10px;
+            .first__read__pack , .second__read__pack , .third__read__pack , .forth__read__pack{
+                width: 25%;
+                display: flex;
+                flex-flow: column wrap;
+                row-gap: 10px;
+                position: relative;
+                .first__read , .second__read , .third__read , .forth__read{
+                    width: 100%;
+                    height: 200px;
+                    transition: 300ms;
+                    backface-visibility: hidden;
+                    transform: rotateY(0);
+                    & img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 15px;
+                    }
+                }
+                &:hover .first__read{
+                    transform: rotateY(180deg);
+                }
+                &:hover .second__read{
+                    transform: rotateY(180deg);
+                }
+                &:hover .third__read{
+                    transform: rotateY(180deg);
+                }
+                &:hover .forth__read{
+                    transform: rotateY(180deg);
+                }
+                .cover__first__read , .cover__second__read , .cover__third__read , .cover__forth__read{
+                    width: 100%;
+                    height: 200px;
+                    background-image: linear-gradient(to right,rgb(99, 25, 93),rgba(189, 90, 172, 0.7));
+                    box-sizing: border-box;
+                    transform: rotateY(180deg);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transition: 300ms;
+                    backface-visibility: hidden;
+                    border-radius: 15px;
+                    & a{
+                        text-decoration: none;
+                        & p{
+                            font-size: 12px;
+                            font-family: var(--font-family);
+                            padding: 70px 10px 0 10px;
+                            color: #ffff;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            transform: translateY(50px);
+                            opacity: 0;
+                            transition: 300ms;
+                            transition-delay: 300ms;
+                        }
+                    }
+                }
+                &:hover .cover__first__read{
+                    transform: rotateY(0);
+                }
+                &:hover .cover__second__read{
+                    transform: rotateY(0);
+                }
+                &:hover .cover__third__read{
+                    transform: rotateY(0);
+                }
+                &:hover .cover__forth__read{
+                    transform: rotateY(0);
+                }
+                &:hover .cover__first__read p{
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+                &:hover .cover__second__read p{
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+                &:hover .cover__third__read p{
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+                &:hover .cover__forth__read p{
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.two_ads_two{
+    width: 100%;
+    height: 280px;
+    .two__parents{
+        width: 80%;
+        height: 265px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 10px;
+        .ads__one , .ads__two {
+            width: 50%;
+            height: 265px;
+            & img{
+                width: 100%;
+                height: 100%;
+                border-radius: 15px;
+            }
+        }
+    }
+}

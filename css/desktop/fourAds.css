@@ -1,0 +1,23 @@
+.four_ads{
+    width: 100%;
+    height: 260px;
+    .four__parents{
+        width: 80%;
+        height: 220px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 10px;
+        .one__ads , .two__ads , .three__ads , .four__ads{
+            width: 25%;
+            height: 220px;
+            & img{
+                width: 100%;
+                height: 100%;
+                border-radius: 15px;
+            }
+        }
+    }
+    
+}

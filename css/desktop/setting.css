@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --font-family: IRANYEKAN ;
+    --font-family-number: BNAZANIN ;
+
+}
+@font-face {
+    font-family: IRANYEKAN;
+    src: url('../../fonts/IRANYekanWeb.eot');
+    src: url('../../fonts/IRANYekanWeb.ttf');
+    src: url('../../fonts/IRANYekanWeb.woff');
+    src: url('../../fonts/IRANYekanWeb.woff2');
+}
+@font-face{
+    font-family: BNAZANIN;
+    src: url(../../fonts/BNazanin.eot);
+    src: url(../../fonts/BNazanin.ttf);
+    src: url(../../fonts/BNazanin.woff);
+    src: url(../../fonts/BNazanin.woff2);
+}
+html,body{
+    direction: rtl;
+}
+.wrapper{
+    width: 100%;
+}

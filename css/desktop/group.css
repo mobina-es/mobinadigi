@@ -1,0 +1,83 @@
+.group{
+    width: 100%;
+    height: 400px;
+    .group_center{
+        width: 80%;
+        height: 350px;
+        margin: 0 auto;
+        .group__top{
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & h5{
+                font-family: var(--font-family);
+                font-size: 18px;
+                color: #2b2b2b;
+            }
+        }
+        .group__bottom{
+            width: 100%;
+            height: 310px;
+            .group__bottom__first{
+                width: inherit;
+                height: 50%;
+                margin: 0 auto;
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                justify-content: space-around;
+                & a{
+                    text-decoration: none;
+                }
+                & div{
+                    display: flex;
+                    flex-flow: column wrap;
+                    align-items: center;
+                    justify-content: center;
+                }
+                & img{
+                    width: 100px;
+                    height: 100px;
+                    margin-bottom: 10px; 
+                }
+                & h5{
+                    font-family: var(--font-family);
+                    font-size: 12px;
+                    color: #2b2b2b;
+                }
+            }
+            .group__bottom__second{
+                width: inherit;
+                height: 50%;
+                margin: 0 auto;
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                justify-content: space-around;
+                & a{
+                    text-decoration: none;
+                }
+                & div{
+                    width: inherit;
+                    display: flex;
+                    flex-flow: column wrap;
+                    align-items: center;
+                    justify-content: center;
+                }
+                & img{
+                    width: 100px;
+                    height: 100px;
+                    margin-bottom: 10px; 
+                }
+                & h5{
+                    font-family: var(--font-family);
+                    font-size: 12px;
+                    color: #2b2b2b;
+                }
+                
+            }
+        }
+    }
+}
